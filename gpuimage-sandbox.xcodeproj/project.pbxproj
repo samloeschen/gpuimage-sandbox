@@ -12,8 +12,6 @@
 		68AC86B220B0CD28009C81D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AC86B020B0CD28009C81D0 /* Main.storyboard */; };
 		68AC86B420B0CD29009C81D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AC86B320B0CD29009C81D0 /* Assets.xcassets */; };
 		68AC86B720B0CD29009C81D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AC86B520B0CD29009C81D0 /* LaunchScreen.storyboard */; };
-		68AC86C220B0CD29009C81D0 /* glitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC86C120B0CD29009C81D0 /* glitchTests.swift */; };
-		68AC86CD20B0CD29009C81D0 /* glitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC86CC20B0CD29009C81D0 /* glitchUITests.swift */; };
 		68AC86EC20B0D9B7009C81D0 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AC86E620B0CDDC009C81D0 /* GPUImage.framework */; };
 		68AC86EE20B0DA15009C81D0 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68AC86E620B0CDDC009C81D0 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68AC86F120B0E35D009C81D0 /* TimeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC86F020B0E35D009C81D0 /* TimeOperation.swift */; };
@@ -94,11 +92,7 @@
 		68AC86B620B0CD29009C81D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68AC86B820B0CD29009C81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68AC86BD20B0CD29009C81D0 /* gpuimage-sandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gpuimage-sandboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68AC86C120B0CD29009C81D0 /* glitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glitchTests.swift; sourceTree = "<group>"; };
-		68AC86C320B0CD29009C81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68AC86C820B0CD29009C81D0 /* gpuimage-sandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gpuimage-sandboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68AC86CC20B0CD29009C81D0 /* glitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glitchUITests.swift; sourceTree = "<group>"; };
-		68AC86CE20B0CD29009C81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../GPUImage2/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 		68AC86F020B0E35D009C81D0 /* TimeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOperation.swift; sourceTree = "<group>"; };
 		68C8FC9B20B213F20082E40A /* FakeFloydSteinberg_GLES.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = FakeFloydSteinberg_GLES.fsh; sourceTree = "<group>"; };
@@ -133,9 +127,7 @@
 		68AC86A020B0CD27009C81D0 = {
 			isa = PBXGroup;
 			children = (
-				68AC86AB20B0CD27009C81D0 /* glitch */,
-				68AC86C020B0CD29009C81D0 /* glitchTests */,
-				68AC86CB20B0CD29009C81D0 /* glitchUITests */,
+				68AC86AB20B0CD27009C81D0 /* gpuimage-sandbox */,
 				68AC86AA20B0CD27009C81D0 /* Products */,
 				68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */,
 				68AC86EB20B0D9B7009C81D0 /* Frameworks */,
@@ -152,7 +144,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68AC86AB20B0CD27009C81D0 /* glitch */ = {
+		68AC86AB20B0CD27009C81D0 /* gpuimage-sandbox */ = {
 			isa = PBXGroup;
 			children = (
 				68C8FC9B20B213F20082E40A /* FakeFloydSteinberg_GLES.fsh */,
@@ -164,25 +156,7 @@
 				68AC86B820B0CD29009C81D0 /* Info.plist */,
 				68AC86F020B0E35D009C81D0 /* TimeOperation.swift */,
 			);
-			path = glitch;
-			sourceTree = "<group>";
-		};
-		68AC86C020B0CD29009C81D0 /* glitchTests */ = {
-			isa = PBXGroup;
-			children = (
-				68AC86C120B0CD29009C81D0 /* glitchTests.swift */,
-				68AC86C320B0CD29009C81D0 /* Info.plist */,
-			);
-			path = glitchTests;
-			sourceTree = "<group>";
-		};
-		68AC86CB20B0CD29009C81D0 /* glitchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				68AC86CC20B0CD29009C81D0 /* glitchUITests.swift */,
-				68AC86CE20B0CD29009C81D0 /* Info.plist */,
-			);
-			path = glitchUITests;
+			path = "gpuimage-sandbox";
 			sourceTree = "<group>";
 		};
 		68AC86DB20B0CDDB009C81D0 /* Products */ = {
@@ -384,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68AC86C220B0CD29009C81D0 /* glitchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68AC86CD20B0CD29009C81D0 /* glitchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,7 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S92VEDVZS6;
-				INFOPLIST_FILE = glitch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/gpuimage-sandbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,7 +546,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S92VEDVZS6;
-				INFOPLIST_FILE = glitch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/gpuimage-sandbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

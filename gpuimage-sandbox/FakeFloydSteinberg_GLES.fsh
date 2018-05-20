@@ -6,8 +6,8 @@ varying vec2 textureCoordinate;
 
 uniform sampler2D inputImageTexture;
 
-const int lookupSize = 16;
-const float errorCarry = 0.4;
+const int lookupSize = 32;
+const float errorCarry = 0.3;
 const vec2 resolution = vec2(1080, 1920);
 
 

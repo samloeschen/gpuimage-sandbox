@@ -1,6 +1,6 @@
 //
-//  glitchUITests.swift
-//  glitchUITests
+//  sandboxUITests.swift
+//  sandboxUITests
 //
 //  Created by Samuel Loeschen on 5/19/18.
 //  Copyright © 2018 Samuel Loeschen. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class glitchUITests: XCTestCase {
+class sandboxUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
