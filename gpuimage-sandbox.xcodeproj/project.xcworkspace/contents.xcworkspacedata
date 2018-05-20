@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:glitch.xcodeproj">
+      location = "self:/Users/samloeschen/projects/gpuimage-sandbox/gpuimage-sandbox.xcodeproj">
    </FileRef>
 </Workspace>

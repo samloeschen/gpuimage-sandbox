@@ -14,6 +14,10 @@
 		68AC86B720B0CD29009C81D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AC86B520B0CD29009C81D0 /* LaunchScreen.storyboard */; };
 		68AC86C220B0CD29009C81D0 /* glitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC86C120B0CD29009C81D0 /* glitchTests.swift */; };
 		68AC86CD20B0CD29009C81D0 /* glitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC86CC20B0CD29009C81D0 /* glitchUITests.swift */; };
+		68AC86EC20B0D9B7009C81D0 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AC86E620B0CDDC009C81D0 /* GPUImage.framework */; };
+		68AC86EE20B0DA15009C81D0 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68AC86E620B0CDDC009C81D0 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68AC86F120B0E35D009C81D0 /* TimeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC86F020B0E35D009C81D0 /* TimeOperation.swift */; };
+		68C8FC9F20B213F20082E40A /* FakeFloydSteinberg_GLES.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 68C8FC9B20B213F20082E40A /* FakeFloydSteinberg_GLES.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,22 +35,73 @@
 			remoteGlobalIDString = 68AC86A820B0CD27009C81D0;
 			remoteInfo = glitch;
 		};
+		68AC86E120B0CDDC009C81D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC6E7CAB1C39A9D8006DF678;
+			remoteInfo = GPUImage_macOS;
+		};
+		68AC86E320B0CDDC009C81D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC6E7CB51C39A9D8006DF678;
+			remoteInfo = GPUImageTests_macOS;
+		};
+		68AC86E520B0CDDC009C81D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34E91E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
+		68AC86E720B0CDDC009C81D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34F11E524A2200B8604F;
+			remoteInfo = GPUImageTests_iOS;
+		};
+		68AC86E920B0CE66009C81D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9E34E81E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		68AC86ED20B0D9FE009C81D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68AC86EE20B0DA15009C81D0 /* GPUImage.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		68AC86A920B0CD27009C81D0 /* glitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AC86A920B0CD27009C81D0 /* gpuimage-sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gpuimage-sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AC86AC20B0CD28009C81D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68AC86AE20B0CD28009C81D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68AC86B120B0CD28009C81D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68AC86B320B0CD29009C81D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68AC86B620B0CD29009C81D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68AC86B820B0CD29009C81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68AC86BD20B0CD29009C81D0 /* glitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AC86BD20B0CD29009C81D0 /* gpuimage-sandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gpuimage-sandboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AC86C120B0CD29009C81D0 /* glitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glitchTests.swift; sourceTree = "<group>"; };
 		68AC86C320B0CD29009C81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68AC86C820B0CD29009C81D0 /* glitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AC86C820B0CD29009C81D0 /* gpuimage-sandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gpuimage-sandboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AC86CC20B0CD29009C81D0 /* glitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glitchUITests.swift; sourceTree = "<group>"; };
 		68AC86CE20B0CD29009C81D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../GPUImage2/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		68AC86F020B0E35D009C81D0 /* TimeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOperation.swift; sourceTree = "<group>"; };
+		68C8FC9B20B213F20082E40A /* FakeFloydSteinberg_GLES.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = FakeFloydSteinberg_GLES.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AC86EC20B0D9B7009C81D0 /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,15 +137,17 @@
 				68AC86C020B0CD29009C81D0 /* glitchTests */,
 				68AC86CB20B0CD29009C81D0 /* glitchUITests */,
 				68AC86AA20B0CD27009C81D0 /* Products */,
+				68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */,
+				68AC86EB20B0D9B7009C81D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		68AC86AA20B0CD27009C81D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68AC86A920B0CD27009C81D0 /* glitch.app */,
-				68AC86BD20B0CD29009C81D0 /* glitchTests.xctest */,
-				68AC86C820B0CD29009C81D0 /* glitchUITests.xctest */,
+				68AC86A920B0CD27009C81D0 /* gpuimage-sandbox.app */,
+				68AC86BD20B0CD29009C81D0 /* gpuimage-sandboxTests.xctest */,
+				68AC86C820B0CD29009C81D0 /* gpuimage-sandboxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +155,14 @@
 		68AC86AB20B0CD27009C81D0 /* glitch */ = {
 			isa = PBXGroup;
 			children = (
+				68C8FC9B20B213F20082E40A /* FakeFloydSteinberg_GLES.fsh */,
 				68AC86AC20B0CD28009C81D0 /* AppDelegate.swift */,
 				68AC86AE20B0CD28009C81D0 /* ViewController.swift */,
 				68AC86B020B0CD28009C81D0 /* Main.storyboard */,
 				68AC86B320B0CD29009C81D0 /* Assets.xcassets */,
 				68AC86B520B0CD29009C81D0 /* LaunchScreen.storyboard */,
 				68AC86B820B0CD29009C81D0 /* Info.plist */,
+				68AC86F020B0E35D009C81D0 /* TimeOperation.swift */,
 			);
 			path = glitch;
 			sourceTree = "<group>";
@@ -125,29 +185,49 @@
 			path = glitchUITests;
 			sourceTree = "<group>";
 		};
+		68AC86DB20B0CDDB009C81D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68AC86E220B0CDDC009C81D0 /* GPUImage.framework */,
+				68AC86E420B0CDDC009C81D0 /* GPUImageTests_macOS.xctest */,
+				68AC86E620B0CDDC009C81D0 /* GPUImage.framework */,
+				68AC86E820B0CDDC009C81D0 /* GPUImageTests_iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68AC86EB20B0D9B7009C81D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		68AC86A820B0CD27009C81D0 /* glitch */ = {
+		68AC86A820B0CD27009C81D0 /* gpuimage-sandbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68AC86D120B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "glitch" */;
+			buildConfigurationList = 68AC86D120B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "gpuimage-sandbox" */;
 			buildPhases = (
 				68AC86A520B0CD27009C81D0 /* Sources */,
 				68AC86A620B0CD27009C81D0 /* Frameworks */,
 				68AC86A720B0CD27009C81D0 /* Resources */,
+				68AC86ED20B0D9FE009C81D0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				68AC86EA20B0CE66009C81D0 /* PBXTargetDependency */,
 			);
-			name = glitch;
+			name = "gpuimage-sandbox";
 			productName = glitch;
-			productReference = 68AC86A920B0CD27009C81D0 /* glitch.app */;
+			productReference = 68AC86A920B0CD27009C81D0 /* gpuimage-sandbox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		68AC86BC20B0CD29009C81D0 /* glitchTests */ = {
+		68AC86BC20B0CD29009C81D0 /* gpuimage-sandboxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68AC86D420B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "glitchTests" */;
+			buildConfigurationList = 68AC86D420B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "gpuimage-sandboxTests" */;
 			buildPhases = (
 				68AC86B920B0CD29009C81D0 /* Sources */,
 				68AC86BA20B0CD29009C81D0 /* Frameworks */,
@@ -158,14 +238,14 @@
 			dependencies = (
 				68AC86BF20B0CD29009C81D0 /* PBXTargetDependency */,
 			);
-			name = glitchTests;
+			name = "gpuimage-sandboxTests";
 			productName = glitchTests;
-			productReference = 68AC86BD20B0CD29009C81D0 /* glitchTests.xctest */;
+			productReference = 68AC86BD20B0CD29009C81D0 /* gpuimage-sandboxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		68AC86C720B0CD29009C81D0 /* glitchUITests */ = {
+		68AC86C720B0CD29009C81D0 /* gpuimage-sandboxUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68AC86D720B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "glitchUITests" */;
+			buildConfigurationList = 68AC86D720B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "gpuimage-sandboxUITests" */;
 			buildPhases = (
 				68AC86C420B0CD29009C81D0 /* Sources */,
 				68AC86C520B0CD29009C81D0 /* Frameworks */,
@@ -176,9 +256,9 @@
 			dependencies = (
 				68AC86CA20B0CD29009C81D0 /* PBXTargetDependency */,
 			);
-			name = glitchUITests;
+			name = "gpuimage-sandboxUITests";
 			productName = glitchUITests;
-			productReference = 68AC86C820B0CD29009C81D0 /* glitchUITests.xctest */;
+			productReference = 68AC86C820B0CD29009C81D0 /* gpuimage-sandboxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +284,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 68AC86A420B0CD27009C81D0 /* Build configuration list for PBXProject "glitch" */;
+			buildConfigurationList = 68AC86A420B0CD27009C81D0 /* Build configuration list for PBXProject "gpuimage-sandbox" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,20 +295,58 @@
 			mainGroup = 68AC86A020B0CD27009C81D0;
 			productRefGroup = 68AC86AA20B0CD27009C81D0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 68AC86DB20B0CDDB009C81D0 /* Products */;
+					ProjectRef = 68AC86DA20B0CDDB009C81D0 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				68AC86A820B0CD27009C81D0 /* glitch */,
-				68AC86BC20B0CD29009C81D0 /* glitchTests */,
-				68AC86C720B0CD29009C81D0 /* glitchUITests */,
+				68AC86A820B0CD27009C81D0 /* gpuimage-sandbox */,
+				68AC86BC20B0CD29009C81D0 /* gpuimage-sandboxTests */,
+				68AC86C720B0CD29009C81D0 /* gpuimage-sandboxUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		68AC86E220B0CDDC009C81D0 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 68AC86E120B0CDDC009C81D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68AC86E420B0CDDC009C81D0 /* GPUImageTests_macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_macOS.xctest;
+			remoteRef = 68AC86E320B0CDDC009C81D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68AC86E620B0CDDC009C81D0 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 68AC86E520B0CDDC009C81D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		68AC86E820B0CDDC009C81D0 /* GPUImageTests_iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_iOS.xctest;
+			remoteRef = 68AC86E720B0CDDC009C81D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		68AC86A720B0CD27009C81D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C8FC9F20B213F20082E40A /* FakeFloydSteinberg_GLES.fsh in Resources */,
 				68AC86B720B0CD29009C81D0 /* LaunchScreen.storyboard in Resources */,
 				68AC86B420B0CD29009C81D0 /* Assets.xcassets in Resources */,
 				68AC86B220B0CD28009C81D0 /* Main.storyboard in Resources */,
@@ -256,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AC86F120B0E35D009C81D0 /* TimeOperation.swift in Sources */,
 				68AC86AF20B0CD28009C81D0 /* ViewController.swift in Sources */,
 				68AC86AD20B0CD28009C81D0 /* AppDelegate.swift in Sources */,
 			);
@@ -282,13 +401,18 @@
 /* Begin PBXTargetDependency section */
 		68AC86BF20B0CD29009C81D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 68AC86A820B0CD27009C81D0 /* glitch */;
+			target = 68AC86A820B0CD27009C81D0 /* gpuimage-sandbox */;
 			targetProxy = 68AC86BE20B0CD29009C81D0 /* PBXContainerItemProxy */;
 		};
 		68AC86CA20B0CD29009C81D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 68AC86A820B0CD27009C81D0 /* glitch */;
+			target = 68AC86A820B0CD27009C81D0 /* gpuimage-sandbox */;
 			targetProxy = 68AC86C920B0CD29009C81D0 /* PBXContainerItemProxy */;
+		};
+		68AC86EA20B0CE66009C81D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage_iOS;
+			targetProxy = 68AC86E920B0CE66009C81D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -479,7 +603,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/glitch.app/glitch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gpuimage-sandbox.app/gpuimage-sandbox";
 			};
 			name = Debug;
 		};
@@ -500,7 +624,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/glitch.app/glitch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gpuimage-sandbox.app/gpuimage-sandbox";
 			};
 			name = Release;
 		};
@@ -547,7 +671,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68AC86A420B0CD27009C81D0 /* Build configuration list for PBXProject "glitch" */ = {
+		68AC86A420B0CD27009C81D0 /* Build configuration list for PBXProject "gpuimage-sandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68AC86CF20B0CD29009C81D0 /* Debug */,
@@ -556,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68AC86D120B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "glitch" */ = {
+		68AC86D120B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "gpuimage-sandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68AC86D220B0CD29009C81D0 /* Debug */,
@@ -565,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68AC86D420B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "glitchTests" */ = {
+		68AC86D420B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "gpuimage-sandboxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68AC86D520B0CD29009C81D0 /* Debug */,
@@ -574,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68AC86D720B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "glitchUITests" */ = {
+		68AC86D720B0CD29009C81D0 /* Build configuration list for PBXNativeTarget "gpuimage-sandboxUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68AC86D820B0CD29009C81D0 /* Debug */,
