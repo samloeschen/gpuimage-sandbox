@@ -7,14 +7,15 @@ varying vec2 textureCoordinate;
 uniform sampler2D inputImageTexture;
 
 const int lookupSize = 16;
-const float errorCarry = 0.05;
+const float errorCarry = 0.4;
 const vec2 resolution = vec2(1080, 1920);
 
 
-float getGrayscale(vec2 coords){
-    vec3 sourcePixel = texture2D(inputImageTexture, coords).rgb;
+float getGrayscale(vec2 fragCoord){
+    vec2 uv = fragCoord / resolution.xy;
+    vec3 sourcePixel = texture2D(inputImageTexture, uv).rgb;
     //contrast sourePixel
-    return length(dot(sourcePixel, vec3(0.4126, 0.5152, 0.0722)));
+    return length(dot(sourcePixel, vec3(0.2126,0.7152,0.0722)));
 }
 
 
@@ -28,6 +29,7 @@ void main () {
         grayscale += xError;
         float bit = grayscale >= 0.5 ? 1.0 : 0.0;
         xError = (grayscale - bit) * errorCarry;
+
     }
     
     float yError = 0.0;
@@ -38,7 +40,7 @@ void main () {
         yError = (grayscale - bit) * errorCarry;
     }
     
-    float finalGrayscale = getGrayscale(textureCoordinate);
+    float finalGrayscale = getGrayscale(fragCoord);
     finalGrayscale += (xError * 0.5) + (yError * 0.5);
     float finalBit = finalGrayscale >= 0.5 ? 1.0 : 0.0;
 
